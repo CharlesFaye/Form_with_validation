@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <title>Form with validation</title>
+</head>
+<body>
+    <div id="wrapper" class="max-w-full m-5 md:mx-auto md:my-[50px] md:w-1/2 ">
+        <div id="message-error" class="my-10">
+            <p class="text-2xl text-center text-red-500 "></p>
+        </div>
+        <form  method="" class="flex flex-col  gap-5 items-center shadow-xl border py-5">
+
+            <div class="flex flex-col gap-3">
+                 <label for="name">Name</label>
+                 <input type="text" name="" id="name" class="border border-gray-400 outline-none rounded-lg p-2 md:w-[400px]">
+            </div>
+            <div class="flex flex-col gap-3">
+                  <label for="email">Email</label>
+                  <input type="email" name="" id="email" class="border border-gray-400 outline-none rounded-lg p-2 md:w-[400px]">
+            </div>
+            <div class="flex flex-col gap-3">
+                   <label for="password">Password</label>
+                   <input type="password" name="" id="password" class="border border-gray-400 outline-none rounded-lg p-2 md:w-[400px]">
+            </div>
+                      <button  type="submit" id="send" class="bg-blue-500 text-white py-3 px-5 rounded-lg cursor-pointer mt-5">Send</button>
+  
+          
+        </form>
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
